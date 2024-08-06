@@ -11,11 +11,12 @@ const root = ReactDOM.createRoot(rootElement);
 
 // 4) Create a component
 function App() {
-  // This is not render on the browser, to display a element
-  // you must return from the function;
-  <h4>This is an elment!</h4>
+  let message = "Bye there!";
+  if(Math.random() > 0.5){
+    message = "Hello there!";
+  }
 
-  return <h1>Hi there!</h1>
+  return <h1>{message}</h1>
 }
 
 // 5) Show the component on the screen
