@@ -18,9 +18,11 @@ function App() {
   return (
    <div className="app">
     <button onClick={handleClick} >Add Animal</button>
+    <div className="animal-list">
     {animals.map((animal, index) => {
       return <AnimalShow key={index} type={animal}/>
     })}
+    </div>
    </div>
   )
 }
