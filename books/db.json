@@ -1,3 +1,12 @@
 {
-  "books": []
+  "books": [
+    {
+      "id": "c140",
+      "title": "Harry Potter"
+    },
+    {
+      "id": "8d9c",
+      "title": "Lord of the Rings"
+    }
+  ]
 }
