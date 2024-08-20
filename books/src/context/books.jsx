@@ -45,7 +45,7 @@ function Provider({children}){
     setBooks(updatedBooks);
   }
 
-  return <BooksContext.Provider value={{}}>
+  return <BooksContext.Provider value={{books, fetchBooks, createBook, editBookById, deleteBookById}}>
     {children}
   </BooksContext.Provider>
 }
