@@ -1,13 +1,5 @@
 import className from 'classnames';
 
-const finalClassName = className('p-6', {
-  'bg-blue-500': true,
-  'px-6': false,
-  'py-5': true
-});
-
-console.log(finalClassName);
-
 function Button({
   children,
   primary,
@@ -18,8 +10,18 @@ function Button({
   outline,
   rounded
 }) {
+  const classes = className('px-3 py-1.5 border', {
+    'border-blue-600 bg-blue-500 text-white': primary,
+    'border-gray-900 bg-gray-900 text-white': secondary,
+    'border-green-600 bg-green-500 text-white': success,
+    'border-yellow-400 bg-yellow-400 text-gray-900': warning,
+    'border-red-600 bg-red-500 text-white': danger,
+
+  })
+
+
   return (
-    <button className="px-3 py-1.5 border border-blue-600 bg-blue-500 text-white">{children}</button>
+    <button className={classes}>{children}</button>
   )
 }
 
