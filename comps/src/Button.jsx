@@ -1,4 +1,12 @@
-import PropTypes from "prop-types";
+import className from 'classnames';
+
+const finalClassName = className('p-6', {
+  'bg-blue-500': true,
+  'px-6': false,
+  'py-5': true
+});
+
+console.log(finalClassName);
 
 function Button({
   children,
