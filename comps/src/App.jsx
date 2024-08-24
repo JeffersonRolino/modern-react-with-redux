@@ -2,10 +2,14 @@ import Button from "./Button";
 import {GoBell, GoCheckCircleFill , GoCodeOfConduct  } from "react-icons/go";
 
 function App() {
+  const handleClick = () => {
+    console.log("clicked!!!");
+  }
+
   return (
     <div>
       <div>
-        <Button primary outline rounded> <GoBell/>Click Me!</Button>
+        <Button primary outline rounded onClick={handleClick}> <GoBell/>Click Me!</Button>
       </div>
       <div>
         <Button secondary><GoCheckCircleFill /> Buy Now</Button>
