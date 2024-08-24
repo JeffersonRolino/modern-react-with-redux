@@ -12,7 +12,7 @@ function App() {
         <Button primary outline rounded onClick={handleClick}> <GoBell/>Click Me!</Button>
       </div>
       <div>
-        <Button secondary><GoCheckCircleFill /> Buy Now</Button>
+        <Button secondary className="mb-5 mt-5"><GoCheckCircleFill /> Buy Now</Button>
       </div>
       <div>
         <Button success outline> <GoCodeOfConduct /> See Deal!</Button>
