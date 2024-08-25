@@ -1,7 +1,7 @@
-import Button from "./components/Button";
+import Button from "../components/Button";
 import {GoBell, GoCheckCircleFill , GoCodeOfConduct  } from "react-icons/go";
 
-function App() {
+function ButtonPage() {
   const handleClick = () => {
     console.log("clicked!!!");
   }
@@ -27,4 +27,4 @@ function App() {
   )
 }
 
-export default App
+export default ButtonPage;
