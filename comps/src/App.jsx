@@ -1,28 +1,24 @@
-import Button from "./components/Button";
-import {GoBell, GoCheckCircleFill , GoCodeOfConduct  } from "react-icons/go";
+import Accordion from "./components/Accordion";
 
 function App() {
-  const handleClick = () => {
-    console.log("clicked!!!");
-  }
+  const items = [
+    {
+      label:'Components in React',
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, error?'
+    },
+    {
+      label:'Learning HTML5 and CSS3',
+      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque id mollitia, corporis cum consectetur ducimus sed magni similique nobis!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque id mollitia, corporis cum consectetur ducimus sed magni similique nobis!'
+    },
+    {
+      label:'The trick parts of Next.js',
+      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero libero blanditiis quos harum praesentium inventore fugiat ducimus quidem. Repellendus, qui.'
+    },
+  ]
 
   return (
     <div>
-      <div>
-        <Button primary outline rounded onClick={handleClick}> <GoBell/>Click Me!</Button>
-      </div>
-      <div>
-        <Button secondary className="mb-5 mt-5"><GoCheckCircleFill /> Buy Now</Button>
-      </div>
-      <div>
-        <Button success outline> <GoCodeOfConduct /> See Deal!</Button>
-      </div>
-      <div>
-        <Button warning rounded>Hide Ads</Button>
-      </div>
-      <div>
-        <Button danger rounded>Close</Button>
-      </div>
+      <Accordion items={items}/>
     </div>
   )
 }
