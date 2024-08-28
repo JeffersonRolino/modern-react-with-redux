@@ -5,11 +5,19 @@ function Dropdown({options}) {
 
   const handleClick = () => {
     setIsOpen(!isOpen);
-  }  
+  }
+
+  const handleOptionClick = (option) => {
+    // Close Dropdown
+    setIsOpen(false);
+
+    // Selected Option
+    console.log(option);
+  }
 
   const renderedOptions = options.map((option) => {
     return (
-      <div key={option.value}>
+      <div onClick={() => handleOptionClick(option)} key={option.value}>
         {option.value}
       </div>
     )
