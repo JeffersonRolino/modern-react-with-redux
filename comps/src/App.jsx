@@ -5,9 +5,12 @@ import DropdownPage from "./pages/DropdownPage";
 
 function App() {
   return (
-    <div className="flex">
-      <Link to="/accordion">Go to accordion</Link>
-      <Link to="/dropdown">Go to dropdown</Link>
+    <div className="flex-col p-4">
+      <div className="flex-row mb-3 w-full">
+        <Link to="/accordion">Go to accordion</Link>
+        <Link to="/dropdown">Go to dropdown</Link>
+      </div>
+
       <div>
         <Route path="/accordion">
           <AccordionPage />
