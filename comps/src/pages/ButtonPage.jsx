@@ -14,7 +14,7 @@ function ButtonPage() {
         </Button>
       </div>
       <div>
-        <Button secondary className="mb-5 mt-5">
+        <Button secondary>
           <GoCheckCircleFill /> Buy Now
         </Button>
       </div>
