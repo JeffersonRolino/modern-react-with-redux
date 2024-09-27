@@ -8,7 +8,17 @@ function Table({ data }) {
           <th>Score</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody>
+        {data.map((fruit) => {
+          return (
+            <tr key={fruit.name}>
+              <td>{fruit.name}</td>
+              <td>{fruit.color}</td>
+              <td>{fruit.score}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </table>
   );
 }
