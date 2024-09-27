@@ -1,8 +1,8 @@
 function Table({ data }) {
   return (
-    <table>
+    <table className="table-auto border-spacing-2">
       <thead>
-        <tr>
+        <tr className="border-b-2">
           <th>Fruit</th>
           <th>Color</th>
           <th>Score</th>
@@ -11,10 +11,12 @@ function Table({ data }) {
       <tbody>
         {data.map((fruit) => {
           return (
-            <tr key={fruit.name}>
-              <td>{fruit.name}</td>
-              <td>{fruit.color}</td>
-              <td>{fruit.score}</td>
+            <tr className="border-b" key={fruit.name}>
+              <td className="p-3">{fruit.name}</td>
+              <td className="p-3">
+                <div className={`p-3 m-2 ${fruit.color}`}></div>
+              </td>
+              <td className="p-3">{fruit.score}</td>
             </tr>
           );
         })}
