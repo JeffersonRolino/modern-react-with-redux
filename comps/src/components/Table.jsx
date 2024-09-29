@@ -1,11 +1,11 @@
-function Table({ data }) {
+function Table({ data, config }) {
   return (
     <table className="table-auto border-spacing-2">
       <thead>
         <tr className="border-b-2">
-          <th>Fruit</th>
-          <th>Color</th>
-          <th>Score</th>
+          {config.map((column) => {
+            return <th key={column.label}>{column.label}</th>;
+          })}
         </tr>
       </thead>
       <tbody>
